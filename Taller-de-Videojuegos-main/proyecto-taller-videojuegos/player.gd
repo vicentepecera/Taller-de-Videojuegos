@@ -8,6 +8,8 @@ var timer = 0
 @export var jump = 20
 # Definimos camara
 @onready var camera = $SpringArmPivot/Camera3D
+var lastdirection = Vector3(0,0,-1)
+@onready var skin = $skin
 # Definimos el animador
 #@onready var anim_player = $skeleton_mage/AnimationPlayer
 #@onready var audioplayer = $AudioStreamPlayer3D
@@ -51,6 +53,7 @@ func _physics_process(delta):
 		velocity.y -= delta*g
 	if (Input.is_action_just_pressed("ui_accept") and is_on_floor()) :
 		jumping()
+	# Manejamos el movimiento
 	var input_dir = Input.get_vector("left","right","forward","backward")
 	var direction = (transform.basis*Vector3(input_dir.x,0,input_dir.y)).normalized()
 	direction = direction.rotated(Vector3.UP,camera.global_rotation.y)
@@ -64,6 +67,9 @@ func _physics_process(delta):
 		#if moving == false:
 			#anim_player.play("Idle")
 	if direction:
+		lastdirection = direction
+		var target_angle = atan2(direction.x, direction.z) + PI
+		skin.rotation.y = lerp_angle(skin.rotation.y, target_angle, 0.2)
 		velocity.x = direction.x*SPEED
 		velocity.z = direction.z*SPEED
 	else:
