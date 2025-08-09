@@ -16,8 +16,4 @@ func _unhandled_input(event: InputEvent):
 	if event.is_action_pressed("zoomout") and spring_arm.spring_length <=6:
 		spring_arm.spring_length += 1
 	if event.is_action_pressed("tab"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			
+		get_tree().quit()

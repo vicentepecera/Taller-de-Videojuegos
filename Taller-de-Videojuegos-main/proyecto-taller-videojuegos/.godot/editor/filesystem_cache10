@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1754769566
+cameraspringarm.gd::GDScript::8358808722819122524::1754760893::0::1::::<>Node3D<><>0<>0<><>::
+camera_follow.gd::GDScript/GDScript::1918587290390253713::1754758671::0::1::::<>Camera3D<><>0<>0<><>::
+hand.gd::GDScript/GDScript::2133895270790278383::1754758671::0::1::::<>RefCounted<><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::1587770214213499088::1754758671::1754759003::1::::<><><>0<>0<>571965d3504ba22a694ace090140222d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript::8407440144778766236::1754760769::0::1::::<>Node3D<><>0<>0<><>::
+main.tscn::PackedScene::4311852789246419819::1754761102::0::1::::<><><>0<>0<><>::uid://c72oxxthqxm0k::::res://player.gd<>uid://dr1vktllr5wmm::::res://main.gd<>uid://drdcmglvxwdro::::res://cameraspringarm.gd<>uid://2lm38lkgkqa8::::res://camera_follow.gd<>uid://bsbnwnrqwk7f7::::res://sword.gd
+player.gd::GDScript::7075514912050080740::1754759620::0::1::::Playerclass<>CharacterBody3D<><>0<>0<><>::
+sword.gd::GDScript/GDScript::3652713565125638842::1754758671::0::1::::<>Node3D<><>0<>0<><>::

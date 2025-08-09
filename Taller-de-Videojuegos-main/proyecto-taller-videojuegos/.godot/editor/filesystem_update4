@@ -1,0 +1,6 @@
+res://main.tscn
+res://player.gd
+res://main.gd
+res://sword.gd
+res://hitbox_sword.gd
+res://camera_follow.gd
